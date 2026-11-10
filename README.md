@@ -43,7 +43,8 @@ If you're using another OS or don't want to use Homebrew, install a prebuilt bin
 2. Under **Assets**, click on the archive file for your operating system:
    - MacOS: `c2patool-vx.y.z-universal-apple-darwin.zip`
    - Windows: `c2patool-vx.y.z-x86_64-pc-windows-msvc.zip`
-   - Linux: `c2patool-vx.y.z-x86_64-unknown-linux-gnu.tar.gz`
+   - Linux (x86_64): `c2patool-vx.y.z-x86_64-unknown-linux-gnu.tar.gz`
+   - Linux (ARM64): `c2patool-vx.y.z-aarch64-unknown-linux-gnu.tar.gz`
 3. Download and extract the archive file.
 4. Copy the `c2patool` executable file to a location on your `PATH`.
 

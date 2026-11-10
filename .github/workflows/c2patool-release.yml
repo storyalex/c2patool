@@ -37,6 +37,10 @@ jobs:
             artifact_name: c2patool_linux_intel.tar.gz
             asset_name: ${{ github.ref_name }}-x86_64-unknown-linux-gnu.tar.gz
             sbom_asset_name: ${{ github.ref_name }}-x86_64-unknown-linux-gnu-sbom.json
+          - os: ubuntu-24.04-arm
+            artifact_name: c2patool_linux_aarch64.tar.gz
+            asset_name: ${{ github.ref_name }}-aarch64-unknown-linux-gnu.tar.gz
+            sbom_asset_name: ${{ github.ref_name }}-aarch64-unknown-linux-gnu-sbom.json
           - os: windows-latest
             artifact_name: c2patool_win_intel.zip
             asset_name: ${{ github.ref_name }}-x86_64-pc-windows-msvc.zip

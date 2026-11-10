@@ -59,7 +59,7 @@ These don't vary by platform, so they aren't separate build configurations, but 
 **Build artifacts:** [`c2patool-release.yml`](https://github.com/contentauth/c2patool/blob/main/.github/workflows/c2patool-release.yml) builds and publishes a binary (plus an SBOM) for every versioned release and every release-candidate build:
 
 * **macOS:** universal binary (`aarch64-apple-darwin` and `x86_64-apple-darwin` combined via `lipo`)
-* **Linux:** `x86_64-unknown-linux-gnu`
+* **Linux:** `x86_64-unknown-linux-gnu` and `aarch64-unknown-linux-gnu` (built natively on GitHub's `ubuntu-24.04-arm` runner)
 * **Windows:** `x86_64-pc-windows-msvc`
 
 These are published to the [releases page](https://github.com/contentauth/c2patool/releases); the macOS build is additionally distributed via [Homebrew](https://brew.sh/).

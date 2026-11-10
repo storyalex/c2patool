@@ -7,6 +7,11 @@ else
 	UNAME := $(shell uname)
     ifeq ($(UNAME),Linux)
         PLATFORM := linux
+        ifeq ($(shell uname -m),aarch64)
+            LINUX_ARCH := aarch64
+        else
+            LINUX_ARCH := intel
+        endif
     endif
     ifeq ($(UNAME),Darwin)
         PLATFORM := mac
@@ -69,5 +74,5 @@ release: build-release-win c2patool-package
 endif
 ifeq ($(PLATFORM), linux)
 release: build-release-linux c2patool-package
-	cd target && tar -czvf c2patool_linux_intel.tar.gz c2patool && cd ..
+	cd target && tar -czvf c2patool_linux_$(LINUX_ARCH).tar.gz c2patool && cd ..
 endif
